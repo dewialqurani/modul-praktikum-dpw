@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M8 TUGAS PENDAHULUAN NO.2 </title>
+    <style>
+        body{
+            background-image: url("alam.jpg");
+            margin: 0;
+        }
+        h1{
+            font-family: 'East-Octopus';
+            font-size: 68px;    
+            color: rgba(0, 0, 0, 0.945);
+            text-align: center;
+        }
+        @font-face {
+            font-family: 'East-Octopus';
+            src: url("East-Octopus.otf");
+        }
+        #btn-cetak{
+            width: 170px;
+            margin-top: 20px;
+            margin-left: 26em;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+            outline: none;
+            cursor: pointer;
+            background-color: #3ed2ff;
+            color: #ffffff;
+            border: 4px solid rgb(0, 0, 0);  
+        }
+        #btn-cetak:hover {
+            background-color: rgb(255, 255, 255);
+            color: #0a70b4;
+            border: 2px solid #4848fc;
+        }
+    </style>
+    <script>
+        function confirmation(){
+            var Answer = confirm("Mau Tinggalkan Hati ini ?")
+            if (Answer){
+                alert("Selamat Tinggal dan Sampai Jumpa !")
+            }
+            else{
+                alert("Terimakasih Masih Bertahan, Tetap Semangat dan Jangan Pernah Hilang Harapan")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Contoh Confirm JavaScript</h1>
+    <form>
+        <input type="button" id="btn-cetak" onclick="confirmation()" value="Tinggalkan Hati">
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh style image </title>
+    <style>
+        body {
+            background-color:rgb(241, 89, 62);
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width: 1300px;
+            margin: 100px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            color: black;
+        }
+        .foto{   
+            width: 60%;
+            padding: 10px;
+            margin: 0 10px;
+            box-shadow: 0 0 20px 2px blanchedalmond;
+        }
+
+        .foto img{
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+        }
+        .foto:hover{
+            transform: scale(2,4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>My Gallery Best Friends</h1>
+          <h2> by. Dewialq158</h2>
+        </div>
+        <br>
+        <div class="foto">
+            <img src="IMG_2263.JPG" />
+        </div>
+        <div class="foto">
+            <img src="IMG_2264.JPG" />
+        </div>
+        <div class="foto">
+            <img src="IMG_2265.JPG" />
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>JENIS MAKANAN</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body{
+        background-image: url(image.jpg);
+        background-size: cover;
+      }
+      
+      .konten {
+        margin-left: 70px;
+        border-radius: 20PX;
+        padding-top: 20PX;
+      }
+      .jenis a {
+        text-decoration: none;
+        color: white;
+      }
+      li {
+        list-style: none;
+
+      }
+      .makanan .list {
+        float: left;
+        position: relative;
+        background-color: sandybrown;
+        color: white;
+        width: 300px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+      }
+      .makanan .list .contoh {
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color: saddlebrown;
+        
+      }
+      .makanan .list .contoh .jenis {
+        width: 300px;
+      }
+      .makanan .list:hover {
+        background-color: burlywood;
+        color: darkblue;
+      }
+      .makanan .list .contoh .jenis:hover {
+        background-color:firebrick;
+      }
+      .makanan .list:hover .contoh {
+        display: block;
+      }
+      .jenis:hover a {
+        color: red;
+      }
+      .makanan .list img {
+        width: 50px;
+        height: 40px;
+        border-image: 10px black;
+        padding-top: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="konten">
+      <ul class="makanan">
+        <li class="list">
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB5Zja-zISg58mttjX4A_a8JYtBvNEDAxfog&usqp=CAU" alt="">
+          MAKANAN CEPAT SAJI
+          <i class="fas fa-pizza-slice"></i>
+          <ul class="contoh">
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Kentang_goreng">KENTANG GORENG</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Pizza">PIZZA</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Hamburger">HAMBURGER</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Hot_dog">HOTDOG</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Spageti">SPAGHETTI</a></li>
+          </ul>
+        </li>
+        <li class="list">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyc2yXyHTW2caaNUo5-Sxjf4qK44h__SnVxA&usqp=CAU" alt="">
+          MAKANAN TRADISIONAL
+          <i class="fas fa-egg"></i>
+          <ul class="contoh">
+            <li class="jenis"><a href="hhttps://id.wikipedia.org/wiki/Sate_madura">SATE MADURA</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Rendang">RENDANG</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Soto">SOTO</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Rawon">NASI RAWON</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Gudeg">GUDEG</a></li>
+          </ul>
+        </li>
+
+        <li class="list"> 
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOkPcH393bcJWjDu2w7sxUtsjLjaMhBkcEaxk1wDBCPC07fzRya_LxEMMqO-W6gVb4Dk&usqp=CAU
+          SEAFOOD" alt="">
+          SEAFOOD 
+          <i class="fas fa-fish"></i> 
+          <ul class="contoh">
+            <li class="jenis"><a href="https://cookpad.com/id/resep/668993-cumi-goreng-asam">CUMI GORENG ASEM</a></li>
+            <li class="jenis"><a href="https://www.masakapahariini.com/resep/resep-kepiting-saus-padang/">KEPTING BUMBU PADANG</a></li>
+            <li class="jenis"><a href="https://oto.monster/140-cara-membuat-lobster-bakar-pedas-manis-spesial/">LOBSTER BAKAR PEDAS MANIS</a></li>
+            <li class="jenis"><a href="https://cookpad.com/id/resep/3529171-udang-goreng-mentega">UDANG GORENG MENTEGA</a></li>
+          </ul>
+        </li>
+
+
+        <li class="list">
+          <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cake-dessert-pudding-logo-design-template-1e3763cabe55f984f7b2f0c5d1788b07_screen.jpg?ts=1594477505" alt="">
+          DESSERT
+          <i class="fa fa-birthday-cake"></i>
+          <ul class="contoh">
+            <li class="jenis"><a href="https://cookpad.com/id/resep/10372564-chocolate-pudding">CHOCO PUDING</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Panekuk">PANCAKE</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Pastei">PIE</a></li>
+            <li class="jenis"><a href="https://id.wikipedia.org/wiki/Moci">MOCHI </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

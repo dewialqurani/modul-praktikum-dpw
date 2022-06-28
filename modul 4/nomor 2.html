@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh  image sprites </title>
+    <style>
+        <style type="text/css">
+		#sprite {
+			position: relative;
+		}
+		#sprite li {
+			border: 3px solid black;
+			list-style: none;
+			
+			width: 330px;
+			height: 330px;
+			display: inline-block;
+			position: absolute;
+		}
+		#mabest1 {
+			left: 0px;
+			background: url('IMG_263.jpg')0 0;
+		}
+
+		#mabest2 {
+			left: 330px;
+			background: url('foto/sprites.jpg')-335px 0;
+		}
+		#mabest3 {
+			left: 660px;
+			background: url('foto/sprites.jpg')-670px 0;
+		}
+    </style>
+</head>
+<body>
+    <ul id="sprite">
+		<li id="mabest1">
+		</li>
+		<li id="mabest2">
+		</li>
+		<li id="mabest3">
+		</li>
+	</ul>
+</body>
+</html>

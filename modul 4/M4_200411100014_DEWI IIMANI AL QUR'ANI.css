@@ -1,0 +1,93 @@
+.header {
+    background-color: #8ff2ff;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #2040ce;
+    font-family: 'Calypsoka One';
+    font-size: 3em;
+    font-weight: 150;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    padding-right: 1em;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("alamm.jpg");
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+#text2 {
+    max-width: 500px;
+}
+
+#myfoto {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 8px rgb(0, 0, 0);
+}
+
+#bentar,
+#gili,
+#terjun,
+#Andung,
+#bromo,
+#dami {
+    height: 200px;
+    width: 300px;
+    padding: 1em;
+    border: black 2px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-style: double;
+    border-image-repeat: round;
+    box-shadow: 0 0 20px 2px rgb(6, 43, 146);
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding: 4em 1em;
+}
+
+.wisata {
+    background: #4ce1f5;    
+}
+
+ul {
+    text-align: center;
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 2em;
+    color: rgb(0, 0, 0);
+}
+
+ul li span {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: rgb(0, 0, 0);
+}
+@font-face {
+    font-family: 'Calypsoka One';
+    src: url("CalypsokaOne.ttf");
+}

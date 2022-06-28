@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <title>CSS ACCORDION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+
+body {
+  background-color: blue;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  line-height: 1,5;
+}
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+main {
+    list-style-type: none;
+    display: block;
+    margin:10px auto;
+    background: pink;
+    padding: 5px;
+    width: 50%;
+    border-radius: 25px;
+    font-family: Courier New;
+
+}
+.isi {
+    display: none;
+}
+.isi:target {
+    line-height: 2em;
+    display: block;
+    font-size: 20px;
+    font-family: Broadway;
+    padding-top:5px;
+}
+.isi:target target{
+    display: none;
+}
+.
+
+
+.menu {
+
+    background-color: red;
+    color: black;
+    border-spacing: 20px;
+
+
+}
+.menu:hover {
+    color: blue;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+}
+</style>
+</head>
+<body>
+<main id="main">
+  <h1>Menu Accordion</h1>
+  <ul>
+    <li><a href="#isi1" class="menu"><i class="material-icons">person</i>Mata Kuliah Semester 1</a>
+      <ul class="isi" id="isi1">
+        <li><a href="#" target="blank">Algoritma Dan Dasar Pemrograman</a></li>
+        <li><a href="#" target="blank">Pengantar Teknologi Informasi</a></li>
+        <li><a href="#" target="blank">Matematika Teknik</a></li>
+        <li><a href="#" target="blank">Logika Engineering</a></li>
+        <li><a href="#" target="blank">Bahasa Indonesia</a></li>
+        <li><a href="#" target="blank">Bahasa Inggris</a></li>
+      </ul>    
+    </li>
+  </ul>
+ 
+  <ul>
+    <li><a href="#isi2" class="menu"><i class="material-icons">person</i>Mata Kuliah Semester 2</a>
+      <ul class="isi" id="isi2">
+        <li><a href="#" target="blank">Struktur Data</a></li>
+        <li><a href="#" target="blank">Dasar Pemrograman Web</a></li>
+        <li><a href="#" target="blank">Matematika Diskrit</a></li>
+        <li><a href="#" target="blank">Statistika</a></li>
+        <li><a href="#" target="blank">Komputasi Aljabar Linear</a></li>
+        <li><a href="#" target="blank">Organisasi Komputer</a></li>
+
+      </ul>    
+    </li>
+  </ul>
+ 
+  <ul>
+    <li><a href="#isi3" class="menu"><i class="material-icons">person</i>Semester Selanjutnya</a>
+      <ul class="isi" id="isi3">
+        <li><a href="#">Belum tersedia</a></li>
+      </ul>    
+    </li>
+  </ul>
+</div>
+</main>
+</body>
+</html>

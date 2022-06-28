@@ -1,0 +1,44 @@
+<div class="card-body">
+    <form action="{{url('mahasiswa')}}" method="POST">
+        @csrf
+        <table>    
+            <tr class="form-group">
+                <td>
+                    <label>NIM</label>
+                </td>
+                <td>
+                    <input type="text" name="nim" class="from-control" placeholder="Input NIM disini !" ruqueired>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <label>NAMA</label>
+                </td>
+                <td>
+                    <input type="text" name="nama" class="from-control" placeholder="Input nama disini !" ruqueired>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <label>UMUR</label>
+                </td>
+                <td>
+                    <input type="text" name="umur" class="from-control" placeholder="Input umur disini !" ruqueired>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <label>ALAMAT</label>
+                </td>
+                <td>
+                    <input type="text" name="alamat" class="from-control" placeholder="Input alamat disini !" ruqueired>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-success" name="simpan">Save</button>
+                </td>
+            </tr>
+            {{ method_field('POST') }}
+        </table>
+    </form>

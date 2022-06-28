@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            background-image: url("teluk-hijau.jpg");
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Calypsoka One';
+            font-size: 68px;    
+            color: rgba(255, 255, 255, 0.945);
+        }
+        @font-face {
+            font-family: 'Calypsoka One';
+            src: url("CalypsokaOne.ttf");
+        }
+        main {
+            list-style-type: none;
+            display: block;
+            font-family: Courier New;
+
+        }
+        .isi {
+            display: none;
+        }
+        .isi:target {
+            line-height: 2em;
+            display: block;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top:5px;
+        }
+        .isi:target target{
+            display: none;
+        }
+        .
+
+
+        .menu {
+
+            background-color: red;
+            color: black;
+            border-spacing: 20px;
+        }
+        .menu:hover {
+            color: rgb(255, 0, 0);
+        }
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <h1>Menu Accordion</h1>
+        <ul>
+          <li><a href="#isi1" class="menu"><i class="material-icons">person</i>Akun</a>
+            <ul class="isi" id="isi1">
+              <li><a href="#" target="blank">privasi</a></li>
+              <li><a href="#" target="blank">keamanan</a></li>
+              <li><a href="#" target="blank">verifikasi dua langkah</a></li>
+              <li><a href="#" target="blank">Ganti Nomor</a></li>
+              <li><a href="#" target="blank">Minta info akun</a></li>
+              <li><a href="#" target="blank">Hapus akun saya</a></li>
+            </ul>    
+          </li>
+        </ul>
+       
+        <ul>
+          <li><a href="#isi2" class="menu"><i class="material-icons">message</i>Chat</a>
+            <ul class="isi" id="isi2">
+              <li><a href="#" target="blank">Tema</a></li>
+              <li><a href="#" target="blank">Wallpaper</a></li>
+              <li><a href="#" target="blank">Cadangan Chat</a></li>
+              <li><a href="#" target="blank">Riwayat Chat</a></li>
+            </ul>    
+          </li>
+        </ul>
+    
+        <ul>
+            <li><a href="#isi4" class="menu"><i class="material-icons">autorenew</i>Penyimpanan dan Data</a>
+              <ul class="isi" id="isi4">
+                <li><a href="#" target="blank">Kelola Penyimpanan</a></li>
+                <li><a href="#" target="blank">Penggunaan jaringan</a></li>
+              </ul>    
+            </li>
+        </ul>
+      </div>
+      </main>
+</body>
+</html>

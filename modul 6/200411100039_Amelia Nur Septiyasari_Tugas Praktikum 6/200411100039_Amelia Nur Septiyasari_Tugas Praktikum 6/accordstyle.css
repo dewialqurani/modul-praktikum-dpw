@@ -1,0 +1,85 @@
+* {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body{
+        background-image: url(image.jpg);
+        background-size: cover;
+      }
+      
+      .konten {
+        margin-left: 70px;
+        border-radius: 20PX;
+        padding-top: 20PX;
+
+      }
+      .jenis a {
+        text-decoration: none;
+        color: white;
+      }
+      li {
+        width: 100%;
+        list-style: none;
+        align-content: center;
+
+      }
+      .makanan .list {
+        float: none;
+        position: relative;
+        background-color: ;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+      }
+      .makanan .list .contoh {
+        display: none;
+        position: relative;
+        width: 50%;
+        background-color: ;
+        left: 25%;
+        right: 25%;
+        align-content: center;
+        
+      }
+      .makanan .list .contoh .jenis {
+        width: 100%;
+      }
+      .makanan .list:hover {
+        background-color: ;
+        color: darkblue;
+      }
+      .makanan .list .contoh .jenis:hover {
+        background-color:firebrick;
+      }
+      .makanan .list:hover .contoh {
+        display: block;
+      }
+      .jenis:hover a {
+        color: red;
+      }
+      .makanan .list img {
+        width: 50px;
+        height: 40px;
+        border-image: 10px black;
+        padding-top: 10px;
+      }
+
+      .accordion_menu{
+        cursor: auto ;
+        font-size: small;
+        padding: 15px;
+        width: 100%;
+        transition: 0,5s;
+        border: none;
+        outline: none;
+      }
+      .active,accordion_menu:hover{
+        background-color: sandybrown;
+        display: block;
+      }
+
+      .container{
+        display: none;
+        overflow: hidden;
+      }

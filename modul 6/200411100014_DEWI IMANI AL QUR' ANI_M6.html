@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Tugas Praktikum Modul 6</title>
+    <style>
+    body {
+        background-image: url("img/bg-masakan.png");
+        background-size: 100%;
+    }
+    @font-face {
+    font-family: 'East Octopus';
+    src: url("East-Octopus.otf");
+    }
+    
+    h1 {
+        color: #ffd900;
+        font-size: 88px;
+        text-align: center;
+        font-family: "East Octopus";
+        text-shadow: 3px 4px rgba(0, 0, 0, 0.753);
+        margin-bottom: 0px;
+        
+    }    
+    .contein {
+        margin-left: 70px;
+        border-radius: 20PX;
+        padding-top: 20PX;
+      }
+      .jenis a {
+        text-decoration: none;
+        color: white;
+      }
+      li {
+        list-style: none;
+
+      }
+      .makanan .list {
+        float: left;
+        position: relative;
+        background-color: rgb(244, 185, 96);
+        color: white;
+        width: 300px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+      }
+      .makanan .list .contoh {
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color: rgb(255, 134, 47);
+        
+      }
+      .makanan .list .contoh .jenis {
+        width: 260px;
+      }
+      .makanan .list:hover {
+        background-color: rgb(222, 181, 135);
+        color: rgb(253, 251, 116);
+      }
+      .makanan .list .contoh .jenis:hover {
+        background-color:rgb(255, 247, 128);
+      }
+      .makanan .list:hover .contoh {
+        display: block;
+      }
+      .jenis:hover a {
+        color: rgb(255, 217, 0);
+      }
+      .makanan .list img {
+        width: 50px;
+        height: 40px;
+        border-image: 10px black;
+        padding-top: 10px;
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Waroeng  DKI  489</h1>
+    <div class="contein">
+        <ul class="makanan">
+          <li class="list">
+            <img src="img/ICON_DKI.jpeg" alt="">
+            NASI GORENG
+            <i class="fas fa-pizza-slice"></i>
+            <ul class="contoh">
+              <li class="jenis"><a href="https://www.instagram.com/p/CMc2LnaLqLR/?utm_medium=copy_link">NASI GORENG KAMBING GORENG</a></li>
+              <li class="jenis"><a href="https://www.masakapahariini.com/resep/resep-nasi-goreng-kari/">NASI GORENG KARI</a></li>
+              <li class="jenis"><a href="https://www.bango.co.id/resep/detail/-i-nasi-goreng-kambing-kebuli--i-">NASI GORENG KAMBING KEBULI</a></li>
+              <li class="jenis"><a href="https://cookpad.com/id/resep/1484339-nasi-goreng-jakarta">NASI GORENG DKI</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <img src="img/ICON_DKI.jpeg" alt="">
+            SATE DAN SOP
+            <i class="fas fa-egg"></i>
+            <ul class="contoh">
+              <li class="jenis"><a href="https://www.masakapahariini.com/resep/resep-sate-kambing-muda-khas-tegal/">SATE KAMBING MUDA</a></li>
+              <li class="jenis"><a href="https://www.tribunnews.com/travel/2015/11/26/lezatnya-10-tusuk-sate-kambing-ini-dagingnya-jumbo-tanpa-lemak-harganya-hanya-rp-35-ribu?page=2">SATE KAMBING 10 TUSUK</a></li>
+              <li class="jenis"><a href="https://www.kompas.com/food/read/2021/01/15/110300475/resep-sop-kambing-bening-hidangan-berkuah-untuk-musim-hujan">SOP KAMBING</a></li>
+              <li class="jenis"><a href="https://resepkoki.id/resep/resep-kari-kambing/">KARE KAMBING</a></li>
+            </ul>
+          </li>
+  
+          <li class="list"> 
+            <img src="img/ICON_DKI.jpeg" alt="">
+            MAKANAN ARAB
+            <i class="fas fa-fish"></i> 
+            <ul class="contoh">
+              <li class="jenis"><a href="https://www.instagram.com/p/CMeEd-hLI7Q/?utm_medium=copy_link">NASI KABSAH AYAM OVEN</a></li>
+              <li class="jenis"><a href="https://www.instagram.com/p/CMc2LnaLqLR/?utm_medium=copy_link">NASI KABSAH KAMBING OVEN</a></li>
+              <li class="jenis"><a href="https://www.instagram.com/p/CMc1IdTrIQ-/?utm_medium=copy_link">NASI KABSAH AYAM GORENG</a></li>
+              <li class="jenis"><a href="https://www.instagram.com/p/CMc1IdTrIQ-/?utm_medium=copy_link">NASI KABSAH KAMBING GORENG</a></li>
+            </ul>
+          </li>
+  
+  
+          <li class="list">
+            <img src="img/ICON_DKI.jpeg" alt="">
+            CAMILAN
+            <i class="fa fa-birthday-cake"></i>
+            <ul class="contoh">
+              <li class="jenis"><a href="https://www.instagram.com/p/CMc1748rVwL/?utm_medium=copy_link">ROTI MARYAM COKLAT</a></li>
+              <li class="jenis"><a href="https://www.blibli.com/p/blackpepper-burger-vegtory/ps--BUV-60023-00003">BURGER ORIGINAL</a></li>
+              <li class="jenis"><a href="https://doyanresep.com/resep-kentang-goreng/">KENTANG GORENG</a></li>
+              <li class="jenis"><a href="https://www.dream.co.id/resep/resep-kebab-turki-mudah-dan-otentik-190724k.html">KEBAB TURKI</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>

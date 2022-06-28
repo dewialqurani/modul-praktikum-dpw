@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+  </head>
+  <body>
+    <script>
+      var nama = prompt("Masukan Nama Anda");
+      var arr;
+      while (true) {
+        var tanggalLahir = prompt("Masukan Tanggal lahir dengan format \n dd-mm-yyyy");
+        arr = tanggalLahir.split("-");
+        if (arr.length == 3) break;
+        alert("masukan format dengan benar");
+      }
+      [arr[0], arr[1]] = [arr[1], arr[0]];
+
+      var lahir = new Date(arr.join("-"));
+      var sekarang = new Date();
+      var umur = sekarang.getFullYear() - lahir.getFullYear();
+      if (lahir.getMonth() > sekarang.getMonth()) {
+        umur -= 1;
+      } else if (lahir.getMonth() == sekarang.getMonth() && lahir.getDay() > sekarang.getDay()) {
+        umur -= 1;
+      } else {
+        umur -= 0;
+      }
+
+      alert("Hallo, Nama anda adalah " + nama + " dan sekarang berusia" + umur);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh border image </title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color:aqua;
+        }
+            .container {
+            width: 1200px;
+            margin: 5px;
+        }
+            .header {
+            text-align: center;
+            color: black;
+        }
+            .border {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+            .foto img {
+            width: 100%;
+        }
+            .foto {
+            width: 30%;
+            padding: 10px;
+            border: black 4px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            border-width: 5px;
+            border-style: double;
+            border-image-repeat: round;
+            border-image-width: 20px;
+            border-image-slice: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>My Gallery Best Friends</h1>
+          <h2>Border Image</h2>
+          <h3> by. Dewialq158</h3>
+        </div>
+        <div class="border">
+          <div class="foto">
+            <img src="IMG_2263.JPG" />
+          </div>
+          <div class="foto">
+            <img src="IMG_2264.JPG" />
+          </div>
+          <div class="foto">
+            <img src="IMG_2265.JPG" />
+          </div>
+          <div class="foto">
+            <img src="IMG_2266.JPG" />
+          </div>
+          <div class="foto">
+            <img src="IMG_2268.JPG" />
+          </div>
+        </div>
+    </div>
+</body>
+</html>

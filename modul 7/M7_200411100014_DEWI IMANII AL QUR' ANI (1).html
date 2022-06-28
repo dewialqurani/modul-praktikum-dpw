@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum Modul 7</title>
+    <style>
+        body{
+            background-image: url("IMG_4542.JPG");
+            margin: 0;
+        }
+        h1{
+            font-family: 'BeautySunflower';
+            font-size: 68px;    
+            color: rgba(255, 255, 255, 0.945);
+            text-align: center;
+        }
+        h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            text-align: center;
+            color: #ffffff;
+        }
+        @font-face {
+            font-family: 'BeautySunflower';
+            src: url("BeautySunflower.otf");
+        }
+        #btn-cetak{
+            width: 170px;
+            margin-top: 20px;
+            margin-left: 26em;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+            outline: none;
+            cursor: pointer;
+            background-color: #ff3e3e;
+            color: #ffffff;
+            border: 4px solid rgb(224, 32, 32);  
+        }
+        #btn-cetak:hover {
+            background-color: rgb(255, 255, 255);
+            color: #b40a0a;
+            border: 2px solid #fc4848;
+        }
+    </style>
+    
+        
+</head>
+<body>
+    <h1>Hitung Umur Menjadi Lebih Mudah</h1>
+    <h3>Berapa Umur Anda Sekarang ? </h3>
+    <script>
+        let name = prompt("Masukan Nama"); let lis;
+        while (true) {
+        let bd = prompt("Masukan Tanggal lahir dengan format\n dd-mm-yyyy");
+        }
+               
+        lis = bd.split("-");
+        if (lis.length == 3) break; alert("masukan format dengan benar");
+         
+        [lis[0], lis[1]] = [lis[1], lis[0]];
+         
+        
+        
+        let age = new Date(lis.join("-")); let sekarang = new Date();
+        // mendapatkan umur dengan menghitung selisih tahun let umur = sekarang.getFullYear() - age.getFullYear(); if (age.getMonth() > sekarang.getMonth()) {
+        // jika sudah berulang tahun umur -= 1;
+        } else if (age.getMonth() == sekarang.getMonth() && age.getDay() > sekarang.getDay()) {
+        // jika bulan sama tetapi sudah ulang tahun umur -= 1;
+        } else {
+        // ketika belum ulang tahun umur -= 0;
+        }
+        
+        
+        alert("Nama : " + name + "\nUmur : " + umur);
+        </script>
+</body>
+</html>

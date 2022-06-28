@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="accordstyle.css">
+    <title>JENIS MAKANAN DENGAN ACCORDION</title>
+  </head>
+  <body>
+      <ul class="makanan">
+        <li class="list">
+          <button class="accordion_menu">
+            MAKANAN CEPAT SAJI
+          <i class="fas fa-pizza-slice"></i>
+          </button>
+          <div class="container">
+            <ul class="contoh">
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Kentang_goreng">KENTANG GORENG</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Pizza">PIZZA</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Hamburger">HAMBURGER</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Hot_dog">HOTDOG</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Spageti">SPAGHETTI</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="list">
+          <button class="accordion_menu">
+            MAKANAN TRADISIONAL
+          <i class="fas fa-egg"></i>
+          </button>
+          <div class="container">
+            <ul class="contoh">
+              <li class="jenis"><a href="hhttps://id.wikipedia.org/wiki/Sate_madura">SATE MADURA</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Rendang">RENDANG</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Soto">SOTO</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Rawon">NASI RAWON</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Gudeg">GUDEG</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="list"> 
+          <button class="accordion_menu">
+            SEAFOOD 
+            <i class="fas fa-fish"></i> 
+          </button>
+          <div class="container">
+            <ul class="contoh">
+              <li class="jenis"><a href="https://cookpad.com/id/resep/668993-cumi-goreng-asam">CUMI GORENG ASEM</a></li>
+              <li class="jenis"><a href="https://www.masakapahariini.com/resep/resep-kepiting-saus-padang/">KEPTING BUMBU PADANG</a></li>
+              <li class="jenis"><a href="https://oto.monster/140-cara-membuat-lobster-bakar-pedas-manis-spesial/">LOBSTER BAKAR PEDAS MANIS</a></li>
+              <li class="jenis"><a href="https://cookpad.com/id/resep/3529171-udang-goreng-mentega">UDANG GORENG MENTEGA</a></li>
+            </ul>
+          </div>
+        </li>
+
+
+        <li class="list">
+          <button class="accordion_menu">
+            DESSERT
+            <i class="fa fa-birthday-cake"></i>
+          </button>
+          <div class="container">
+            <ul class="contoh">
+              <li class="jenis"><a href="https://cookpad.com/id/resep/10372564-chocolate-pudding">CHOCO PUDING</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Panekuk">PANCAKE</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Pastei">PIE</a></li>
+              <li class="jenis"><a href="https://id.wikipedia.org/wiki/Moci">MOCHI </a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  <script>
+        var accordion = document.getElementsByClassName("accordion_menu");
+        var i;
+        
+        for (i = 0; i < accordion.length; i++) {
+          accordion[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var container = this.nextElementSibling;
+            if (container.style.display === "block") {
+              container.style.display = "none";
+            } else {
+              container.style.display = "block";
+            }
+          });
+        }
+        </script>
+  </body>
+</html>
